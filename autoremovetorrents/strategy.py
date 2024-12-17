@@ -23,6 +23,7 @@ from .condition.torrentsize import TorrentSizeCondition
 from .condition.uploaded import UploadsCondition
 from .condition.uploadratio import UploadRatioCondition
 from .condition.uploadspeed import UploadSpeedCondition
+from .condition.hardlink import HardLinkCondition
 from .conditionparser import ConditionParser
 from .exception.unsupportedproperty import UnsupportedProperty
 from .filter.category import CategoryFilter
@@ -131,6 +132,7 @@ class Strategy(object):
             'downloading_time': DownloadingTimeCondition,
             'max_size': SizeCondition,
             'upload_ratio': UploadRatioCondition,
+            'hard_link': HardLinkCondition,
         }
         for conf in self._conf:
             if conf in conditions:

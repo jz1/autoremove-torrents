@@ -19,6 +19,7 @@ from .condition.size import SizeCondition
 from .condition.uploaded import UploadsCondition
 from .condition.uploadratio import UploadRatioCondition
 from .condition.uploadspeed import UploadSpeedCondition
+from .condition.hardlink import HardLinkCondition
 from .conditionlexer import ConditionLexer
 from .exception.nosuchcondition import NoSuchCondition
 from .exception.syntaxerror import ConditionSyntaxError
@@ -44,6 +45,7 @@ class ConditionParser(object):
         'upload': UploadsCondition,
         'upload_ratio': UploadRatioCondition,
         'upload_speed': UploadSpeedCondition,
+        'hard_link': HardLinkCondition,
     }
 
     # Condition expression

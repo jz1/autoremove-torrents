@@ -210,6 +210,7 @@ class qBittorrent(object):
                 torrent_obj.stalled = torrent['state'] == 'stalledUP' or torrent['state'] == 'stalledDL'
                 torrent_obj.size = torrent['size']
                 torrent_obj.ratio = torrent['ratio']
+                torrent_obj.content_path = torrent['content_path']
                 torrent_obj.uploaded = properties['total_uploaded']
                 torrent_obj.downloaded = properties['total_downloaded']
                 torrent_obj.create_time = properties['addition_date']

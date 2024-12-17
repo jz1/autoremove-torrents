@@ -341,6 +341,10 @@ The first 18 conditions are here. In order to avoid torrents being mistakenly de
      - 
      - All
      - The maximum upload ratio. Note that the upload ratio here is different from the ratio. For each torrent, the upload ratio is ``uploaded size`` divided by its ``size``.
+   * - ``hard_link``
+     - 
+     - All
+     - The total maximum hard links in the content path.
 
 .. note::
 
